@@ -53,55 +53,6 @@ $acf_config['fields'] = array(
         'type' => 'input',
         'validation' => array('basic' => array('value' => true, 'message' => 'Please fill the subject')),
     ),
-    
-    /*
-    'drop_down' => array(
-        'title' => 'Sample Drop-Down',
-        'enabled' => 1,
-        'required' => 1,
-        'type' => 'select',
-        'options' => array(
-            'general_inquiry' => 'General Inquiry',
-            'technical_question' => 'Technical Question',
-            'billing_question' => 'Billing Question',
-            'suggestion' => 'Suggestion',
-            'report_bug' => 'Report Bug',
-        ),
-        'validation' => array('basic' => array('value' => true, 'message' => 'This field is required.')),
-    ),
-    
-    'check_boxes' => array(
-        'title' => 'Checkboxes',
-        'enabled' => 1,
-        'required' => 1,
-        'type' => 'checkboxes',
-        'columns' => 2,
-        'options' => array(
-            'general_inquiry' => 'General Inquiry',
-            'technical_question' => 'Technical Question',
-            'billing_question' => 'Billing Question',
-            'suggestion' => 'Suggestion',
-            'report_bug' => 'Report Bug',
-        ),
-        'validation' => array('min_selections' => array('value' => 2, 'message' => 'Please select at least 2 options.')),
-    ),    
-    
-    'radios' => array(
-        'title' => 'Radios',
-        'enabled' => 1,
-        'required' => 1,
-        'type' => 'radios',
-        'columns' => 2,
-        'options' => array(
-            'general_inquiry' => 'Lorem Ipsum',
-            'technical_question' => 'An option here',
-            'billing_question' => 'Billing Question',
-            'suggestion' => 'Suggestion',
-            'report_bug' => 'Report Bug',
-        ),
-        'validation' => array('basic' => array('value' => true, 'message' => 'Please select an option.')),
-    ),
-    */
 
     'message' => array(
         'title' => 'Message *',

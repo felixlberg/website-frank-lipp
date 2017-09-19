@@ -12,7 +12,7 @@ $(document).ready(function() {
         navigationPosition: 'left',
         navigationTooltips: ['Intro', 'Services', 'More', 'Contact'],
         showActiveTooltip: false,
-        slidesNavigation: true,
+        slidesNavigation: false,
         slidesNavPosition: 'bottom',
 
         //Scrolling

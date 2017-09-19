@@ -1,3 +1,21 @@
+<?php
+//PURPOSE: Redirect by browser language just once in session, so user doesn't get disturbed when browsing different language by free will
+$sites = array(
+    "es" => "es/",
+    "en" => "en/",
+);
+
+// Get 2 char lang code
+$lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+
+// Redirect to language versions when available and set cookie to prevent further redirection for one day
+if (in_array($lang, array_keys($sites)) && (!isset($_COOKIE['UserLang']))) {
+  header('Location: ' . $sites[$lang]);
+  setcookie("UserLang", "Checked", time() + (86400 * 1), "/"); // 86400 sec = 1 day
+  exit;
+}
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,7 +64,7 @@
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li data-menuanchor="intro" class="active"><a class="navi" href="#">Intro</a></li>
+							<li data-menuanchor="intro" class="active"><a class="navi" href="#intro">Intro</a></li>
 							<li data-menuanchor="services"><a class="navi" href="#services">Leistungen</a></li>
 							<li data-menuanchor="more"><a class="navi" href="#more">Mehr</a></li>
 							<li data-menuanchor="contact"><a class="navi" href="#contact">Kontakt</a></li>
@@ -84,10 +102,11 @@
 								</header>
 						</div>
 					</div>
+					<div class="arrow bounce"><a href="#services" class="nav-label"></a></div>
 				</div>				
 				<div id="section1" class="section main style2">
 					<header>
-						<h2>Usere Leistungen</h2>
+						<h2>Unsere Leistungen</h2>
 					</header>
 						<div class="container">
 							<div id="gallery" class="row images">
@@ -97,7 +116,7 @@
 									</header>
 									<a id="hover1" href="images/gallery/01.jpg" class="image left">
 										<img src="images/thumbs/01.jpg" title="Wir können nicht alles, aber alles was wir können, können wir zuverlässig, qualifiziert und seriös." title="Dachdeckungen" alt="" />								
-										<div id="panel1" class="hover"><p>Dach- Neu- u. Umdeckungen<br>Wärmedämmung<br>Flachdachabdichtung<br>Dachrinnen<br>Terassenabdichtung<br>Maurerabdeckung<br></p></div>
+										<div id="panel1" class="hover"><p>Dach- Neu- u. Umdeckungen<br>Wärmedämmung<br>Flachdachabdichtung<br>Dachrinnen<br>Terrassenabdichtung<br>Maurerabdeckung<br></p></div>
 									</a>
 									<a href="images/gallery/02.jpg" class="image fit"><img title="Dach- Neu- u. Umdeckungen" alt="" /></a>
 									<a href="images/gallery/03.jpg" class="image fit"><img title="Flachdachabdichtung mit Flüssigkustsoff" alt="" /></a>						
@@ -119,7 +138,7 @@
 									</header>
 									<a id="hover2" href="images/gallery/20.jpg" src="images/gallery/01.jpg" class="image right ">
 										<img src="images/thumbs/02.jpg" title="Wir Fertigen auch Individuelle Holz Arbeiten für sie an." alt="" />
-										<div id="panel2" class="hover"><p>Holzimmerei<br>Maurer-, Putz-, Fliesen<br>und vieles mehr..<br></p></div>
+										<div id="panel2" class="hover"><p>Holz Zimmerei<br>Maurer-, Putz-, Fliesen<br>und vieles mehr..<br></p></div>
 									</a>
 									<a href="images/gallery/21.jpg" class="image fit"><img title="Bei Terassen achten wir ebenfalls auf die richtige Abdichtung" alt="" /></a>
 									<a href="images/gallery/22.jpg" class="image fit"><img title="Hier der Bau einer Garten Lounge" alt="" /></a>
@@ -133,6 +152,7 @@
 								</div>
 							</div>
 						</div>
+						<div class="arrow bounce"><a href="#more" class="nav-label"></a></div>
 				</div>
 				<div id="section2" class="section main style3">
 					<header>
@@ -161,16 +181,17 @@
 							was zu Rissen führt und größere Schäden nach sich ziehen kann.</p>
 							
 							<p>Auch die Nutzungsdauer von Holzbelägen wird maßgeblich davon mitbestimmt, 
-							ob Feuchtigkeit ungehindert abtrocknen kann. Wir arbeiten daher mit betuminösen Schweißbahnen oder Flüssigkunststoff,
+							ob Feuchtigkeit ungehindert abtrocknen kann. Wir arbeiten daher mit bituminösen Schweißbahnen oder Flüssigkunststoff,
 							um eine Optimale Abdichtung ihrer Terrasse zu gewährleisten.</p>
 							
 							<p>Um Selbst bei starker Sonne oder leichtem Regen den Freisitz optimal nutzen zu können,
 							sind ein guter Sonnenschutz bzw. eine Terrassenüberdachung eine perfekte Ergänzung.</p>
 							
-							<h4>Vereinbaren Sie jetzt einen Termin für eine Konstenlose Beratung!<h4>
+							<h4>Vereinbaren Sie jetzt einen Termin für eine Kostenlose Beratung!<h4>
 						</div>
 							
-					</div>				
+					</div>
+					<div class="arrow bounce"><a href="#contact" class="nav-label"></a></div>
 				</div>				
 				
 				
