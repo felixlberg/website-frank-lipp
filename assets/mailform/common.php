@@ -7,10 +7,10 @@ $func = new Misc_Functions;
 $acf_config = array();
 
 // To (here you should enter the e-mail address where you should receive the messages)
-$acf_config['webmaster_email'] = 'test@test.com';
+$acf_config['webmaster_email'] = 'dernaechsteregen@hotmail.de';
 
 // your name/nickname
-$acf_config['webmaster_name'] = 'Felix L.';
+$acf_config['webmaster_name'] = 'Frank Lipp';
 
 // Enable AutoResponder (true or false)
 // Note that the 'Auto Responder' will work if you use the fields 'name' & 'email' (which should belong to the person filling the form) (here, the auto responder mail has to be sent)

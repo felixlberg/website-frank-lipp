@@ -4,39 +4,37 @@
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>Dachdeckerei Frank Lipp</title>
-	<meta name="language" content="de">
-	<meta name="keywords" content="frank lipp, dachdecker, handwerker, dächer, mallorca, balearen" />
-	<meta name="description" content="Dachdeckerei Frank Lipp und Söhne seit 2 Generationen auf Mallorca" />
-	<meta name="page-topic" content="Bauen Wohnen">
+	<meta name="language" content="en">
+	<meta name="keywords" content="frank lipp, roofer, craftsman, roofs, mallorca, balearic islands" />
+	<meta name="description" content="Roofing Frank Lipp and sons for 2 generations on Mallorca" />
+	<meta name="page-topic" content="building living">
 	<link rel="canonical" href="http://www.dernaechsteregen.com">
-	<meta property="og:locale" content="de_DE">
+	<meta property="og:locale" content="en_EN">
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="">
 	<meta property="og:image" content="http://www.dernaechsteregen.com/images/thumbs/01.jpg" />
-	<meta property="og:description" content="Dachdeckerei Frank Lipp und Söhne seit 2 Generationen auf Mallorca">
+	<meta property="og:description" content="Roofing Frank Lipp and sons for 2 generations on Mallorca">
 	<meta property="og:url" content="http://www.dernaechsteregen.com">
 	<meta property="og:site_name" content="Dachdeckerei Frank Lipp und Söhne">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 
-    <script type="text/javascript" src="assets/js/jquery.fullPage.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.easings.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.poptrox.min.js"></script>
-	<script type="text/javascript" src="assets/js/main.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="../assets/js/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="../assets/js/jquery.poptrox.min.js"></script>
+	<script type="text/javascript" src="../assets/js/main.js"></script>
 	<!-- MAIL FORM -->
     <?php
       include 'assets/mailform/common.php';
     ?>
-    <link rel="stylesheet" type="text/css" href="assets/mailform/css/mailform.css" />
-    <!-- link rel="stylesheet" type="text/css" href="assets/mailform/css/fancy-buttons.css" /-->
-    <!-- script type="text/javascript" src="contact-app/js/jquery-1.11.2.min.js"></script-->
-    <script type="text/javascript" src="assets/mailform/js/jquery-migrate.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../assets/mailform/css/mailform.css" />
+    <script type="text/javascript" src="../assets/mailform/js/jquery-migrate.min.js"></script>
     <script type="text/javascript">
       <!--
       var acf_config_path = jQuery.parseJSON('<?php echo $func->DoJsonEncode($acf_config['path']); ?>');
       -->
     </script>
-    <script type="text/javascript" src="<?php echo $acf_config['path']['form']; ?>assets/mailform/js/init.php?x=<?php echo $unique_id; ?>"></script>
-	<link rel="stylesheet" type="text/css" href="assets/css/main.css" />
+    <script type="text/javascript" src="<?php echo $acf_config['path']['form']; ?>../assets/mailform/js/init.php?x=<?php echo $unique_id; ?>"></script>
+	<link rel="stylesheet" type="text/css" href="../assets/css/main.css" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	</head>
 
@@ -47,13 +45,13 @@
 					<nav id="nav">
 						<ul>
 							<li data-menuanchor="intro" class="active"><a class="navi" href="#intro">Intro</a></li>
-							<li data-menuanchor="services"><a class="navi" href="#services">Leistungen</a></li>
-							<li data-menuanchor="more"><a class="navi" href="#more">Mehr</a></li>
-							<li data-menuanchor="contact"><a class="navi" href="#contact">Kontakt</a></li>
+							<li data-menuanchor="services"><a class="navi" href="#services">Services</a></li>
+							<li data-menuanchor="more"><a class="navi" href="#more">More</a></li>
+							<li data-menuanchor="contact"><a class="navi" href="#contact">Contact</a></li>
 						</ul>
 					</nav>
 				<!-- Logo -->
-					<h1 id="logo">Dachdeckerei Frank Lipp</h1>			
+					<h1 id="logo">Roofer Frank Lipp</h1>			
 			</header>
 			<div id="fullpage" class="glass">
 				<div id="section0" class="section main style1">
@@ -64,9 +62,9 @@
 										<img src="images/logo.png" title="Logo" alt="" />
 										<div id="roof"></div>
 									</div>							
-									<h2>Der nächste Regen kommt bestimmt.</h2>
-									<h3>Dachdeckerei Frank Lipp und Söhne - Montuiri Ihr Dach- und Fachbetrieb in der 2. Generation auf Mallorca</h3>
-									<p>Unser Handwerksbetrieb berät Sie individuell in allen Fragen und löst mit seinen qualifizierten und zuverlässigen Mitarbeitern seriös auch schwierige Probleme an Ihrem Bauvorhaben.</p>
+									<h2>The next rain is coming.</h2>
+									<h3>Roofer Frank Lipp und Söhne - Montuiri your roof expert in the second generation on Mallorca</h3>
+									<p>Our craft business advises you individually in all questions and solves with his qualified and reliable employees also difficult problems of your building project.</p>
 								</header>
 						</div>
 					</div>
@@ -77,17 +75,17 @@
 										<img src="images/logo.png" title="Logo" alt="" />
 										<div id="roof"></div>
 									</div>
-									<h2>Trocken vom Keller bis zum Dach.</h2>
-									<p>Der Dachdeckerbetrieb wurde 1997 von mir auf Mallorca gegründet. Jahrelange Erfahrung, leistungsstarke Partnerschaften und unsere hohe Anpassungsfähigkeit<br>
-									an die Anforderungen der heutigen Zeit, sowie die optimale Beratung und Betreuung unserer Kunden,<br>
-									haben unser Unternehmen zu seiner heutigen Bedeutung geführt.</p>
+									<h2>Dry from the cellar to the roof.</h2>
+									<p>The roofing company was founded in 1997 by me on Mallorca. Years of experience, powerful partnerships and our high adaptability<br>
+									to the requirements of today, as well as the optimal advice and support of our customers,<br>
+									have led our company to its present importance.</p>
 								</header>
 						</div>
 					</div>
 				</div>				
 				<div id="section1" class="section main style2">
 					<header>
-						<h2>Usere Leistungen</h2>
+						<h2>Our services</h2>
 					</header>
 						<div class="container">
 							<div id="gallery" class="row images">
@@ -97,7 +95,7 @@
 									</header>
 									<a id="hover1" href="images/gallery/01.jpg" class="image left">
 										<img src="images/thumbs/01.jpg" title="Wir können nicht alles, aber alles was wir können, können wir zuverlässig, qualifiziert und seriös." title="Dachdeckungen" alt="" />								
-										<div id="panel1" class="hover"><p>Dach- Neu- u. Umdeckungen<br>Wärmedämmung<br>Flachdachabdichtung<br>Dachrinnen<br>Terassenabdichtung<br>Maurerabdeckung<br></p></div>
+										<div id="panel1" class="hover"><p>Roof coverings<br>Thermal insulation<br>coverings of flat roofs<br>Gutters<br>Terrace waterproofing<br>Wall coping<br></p></div>
 									</a>
 									<a href="images/gallery/02.jpg" class="image fit"><img title="Dach- Neu- u. Umdeckungen" alt="" /></a>
 									<a href="images/gallery/03.jpg" class="image fit"><img title="Flachdachabdichtung mit Flüssigkustsoff" alt="" /></a>						
@@ -119,7 +117,7 @@
 									</header>
 									<a id="hover2" href="images/gallery/20.jpg" src="images/gallery/01.jpg" class="image right ">
 										<img src="images/thumbs/02.jpg" title="Wir Fertigen auch Individuelle Holz Arbeiten für sie an." alt="" />
-										<div id="panel2" class="hover"><p>Holzimmerei<br>Maurer-, Putz-, Fliesen<br>und vieles mehr..<br></p></div>
+										<div id="panel2" class="hover"><p>Wood carpentry<br>Masonry, plastering, tiles<br>and much more..<br></p></div>
 									</a>
 									<a href="images/gallery/21.jpg" class="image fit"><img title="Bei Terassen achten wir ebenfalls auf die richtige Abdichtung" alt="" /></a>
 									<a href="images/gallery/22.jpg" class="image fit"><img title="Hier der Bau einer Garten Lounge" alt="" /></a>
@@ -136,17 +134,17 @@
 				</div>
 				<div id="section2" class="section main style3">
 					<header>
-						<h2>Eine Korrekte Dachisolierung spart bis zu 40% Heizkosten!</h2>
+						<h2>Correct roof insulation saves up to 40% heating costs!</h2>
 					</header>
 					<div class=" container">
 						<div class="col-sm-6">
 							<img class="roof" src="images/roof.png" title="Logo" alt="" />
-							<p>Eine effiziente Dachisolierung gehört heute förmlich zur Grundausstattung eines Neubaus – 
-							bei Altbauten sind nachträgliche Modernisierungen an der Tagesordnung. 
-							Umfassende Kenntnisse zum Aufbau der Dachisolierung sind unerlässlich.</p>
+							<p>Today, efficient roof insulation is formally the basic equipment of a new building – 
+							In the case of old buildings, subsequent modernization is the order of the day. 
+							Comprehensive knowledge of the structure of the roof insulation is essential.</p>
 							
-							<p>Welche Bauweise eine Dachisolierung bezüglich Aufbau und Materialien erfordert,
-							entscheidet sich nach den Gegebenheiten des Einzelnen gebäudes und der geeigneten Isoliermetode.
+							<p>Which construction requires roof insulation with regard to construction and materials,
+							decides according to the circumstances of the individual building and the appropriate insulation metode.
 							Ein Neubau stellt andere Anforderungen als ein Altbau.</p>
 							
 							<p>Durch korrekte Dachisolierung können nicht nur bis zu 40% Heizkosten gespart werden,
