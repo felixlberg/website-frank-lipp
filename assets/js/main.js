@@ -93,23 +93,21 @@ $(document).ready(function() {
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
 
-		
-		//Gallery hover
-		
-		var windowWidth = $(window).width();
-		if(windowWidth > 800){
-			$("#hover1").hover(function () {
-				$("#panel1").slideToggle().delay(1000);
-			});		
-			
-			$("#hover2").hover(function () {
-				$("#panel2").slideToggle().delay(1000);
-			});
-		}
-		
-		//Gallery Poptrox
-		var gal = $('#gallery');
-		gal.poptrox({
-			usePopupNav: true
-		});
+    //Gallery hover
+    var windowWidth = $(window).width();
+    if(windowWidth > 800){
+        $("#hover1").hover(function () {
+            $("#panel1").slideToggle().delay(1000);
+        });		
+        
+        $("#hover2").hover(function () {
+            $("#panel2").slideToggle().delay(1000);
+        });
+    }
+    
+    //Gallery Poptrox
+    var gal = $('#gallery');
+    gal.poptrox({
+        usePopupNav: true
+    });
 });
