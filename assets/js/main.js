@@ -97,14 +97,23 @@ $(document).ready(function() {
     var windowWidth = $(window).width();
     if(windowWidth > 800){
         $("#hover1").hover(function () {
-            $("#panel1").slideToggle().delay(1000);
+            if( $("#panel1").hasClass('active') ){
+                $("#panel1").slideUp().removeClass('active');
+            }
+            else{
+                $("#panel1").slideDown().addClass('active');
+            }
         });		
-        
         $("#hover2").hover(function () {
-            $("#panel2").slideToggle().delay(1000);
+            if( $("#panel2").hasClass('active') ){
+                $("#panel2").slideUp().removeClass('active');
+            }
+            else{
+                $("#panel2").slideDown().addClass('active');
+            }
         });
     }
-    
+
     //Gallery Poptrox
     var gal = $('#gallery');
     gal.poptrox({

@@ -586,6 +586,9 @@ body {
 	font-size: 16px;
 	bottom: 1em;
 }
+#footer .content{
+	padding: 0 20rem 0 20rem;
+}
 #impressum {
 	background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#969ac6));
 	background: -webkit-linear-gradient(#7BAABE, #969AC6);
@@ -722,7 +725,7 @@ form label {
 }
 form input[type="text"],
 form input[type="email"],
-form input[type="password"],
+form input[type="tel"],
 form select,
 form textarea {
 	-moz-appearance: none;
@@ -741,18 +744,25 @@ form textarea {
 	color: inherit;
 	outline: none;
 	width: 100%;
+	margin: 10px 0 10px 0;
 }
 	form input[type="text"]:focus,
 	form input[type="email"]:focus,
-	form input[type="password"]:focus,
+	form input[type="tel"]:focus,
 	form select:focus,
 	form textarea:focus {
 		border-color: #9ac8e9;
 	}
 form input[type="text"],
 form input[type="email"],
-form input[type="password"] {
+form input[type="tel"] {
 	line-height: 1.35em;
+}
+form input[type="submit"] {
+	border: none;
+	padding: 1rem 3rem 1rem 3rem;
+	background-color: #7BAABE;
+}
 }
 form select {
 	line-height: 1.35em;
