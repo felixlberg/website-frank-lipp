@@ -75,12 +75,12 @@ html.fp-enabled,
     left: 15px;
     width: 0;
     border-width: 38.5px 34px 38.5px 0;
-    border-color: transparent #7BAABE transparent transparent;
+    border-color: transparent #E83338 transparent transparent;
 }
 .fp-controlArrow.fp-next {
     right: 15px;
     border-width: 38.5px 0 38.5px 34px;
-    border-color: transparent transparent transparent #7BAABE;
+    border-color: transparent transparent transparent #E83338
 }
 .fp-scrollable {
     overflow: hidden;
@@ -412,12 +412,12 @@ body {
 		bottom: -8px;
 		left: 25px;
 		/* right: 10px; */
-		background: #f50000;
+		background: #E83338;
 		transform-origin: 54% 0;
 		transform: rotate(45deg);
 		z-index: -1;
 		border-width: 0 82px 82px 82px;
-		border-bottom-color: #f50000;
+		border-bottom-color: #E83338;
 	}
 	/* Lines */
 	.line2 {
@@ -467,14 +467,14 @@ body {
 			position: relative;
 			width: 100%;
 			height: 2px;
-			background-color: #f50000;
+			background-color: #E83338;
 		}
 		.introheader:after {
 			bottom: 15px;
 			position: relative;
 			width: 100%;
 			height: 2px;
-			background-color: #f50000;
+			background-color: #E83338;
 		}
 	#slide1 {
 		background: url("../../images/01.jpg") no-repeat center center fixed; 
@@ -491,7 +491,7 @@ body {
 		background-size: cover;
 	}
 #section1 {
-	background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#B9D7E4));
+	background: -webkit-gradient(linear, top left, bottom left, from(#7baabe), to(#B6D6F2));
 	background: -webkit-linear-gradient(#7BAABE, #B9D7E4);
 	background: linear-gradient(#7BAABE,#B9D7E4);
 }
@@ -559,12 +559,6 @@ body {
 		top: 7em;
 	}	
 /* Section 2 Styles */
-#section2 .roof {
-	position: absolute;
-	width: 16em;
-	left: -50px;
-	top: -100px;
-}
 #section2 header {
 	position: relative;
 	background: url("../../images/03.jpg") no-repeat center center fixed;
@@ -574,6 +568,9 @@ body {
 	box-shadow: inset 0px 10px 9px -10px rgba(0,0,0,0.5),inset 0px -10px 9px -10px rgba(0,0,0,0.5);
 
 }
+	#section2 .col-sm-6 {
+		padding-bottom: 50px;
+	}
 /* Footer 2 Styles */
 #footer .imp {
 	position: absolute;
@@ -646,6 +643,8 @@ body {
 			top: 50%;
 			left: 50%;
 			margin-right: -50%;
+			margin-top: 0;
+			margin-bottom: 0;
 			transform: translate(-50%, -50%);
 			background-color: #0009;
 			color: #7BAABE;
@@ -783,12 +782,11 @@ form ::-moz-focus-inner {
 /*Arrow Down */
 .arrow {
 	position: absolute;
-	bottom: 0;
 	left: 50%;
 	margin-left: -20px;
 	width: 40px;
 	height: 40px;
-	background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCAzODYuMjU3IDM4Ni4yNTciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDM4Ni4yNTcgMzg2LjI1NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+Cjxwb2x5Z29uIHBvaW50cz0iMCw5Ni44NzkgMTkzLjEyOSwyODkuMzc5IDM4Ni4yNTcsOTYuODc5ICIgZmlsbD0iIzdiYWFiZSIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K);
+	background-image: url(data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTYuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4IiB2aWV3Qm94PSIwIDAgMjU1IDI1NSIgc3R5bGU9ImVuYWJsZS1iYWNrZ3JvdW5kOm5ldyAwIDAgMjU1IDI1NTsiIHhtbDpzcGFjZT0icHJlc2VydmUiPgo8Zz4KCTxnIGlkPSJhcnJvdy1kcm9wLWRvd24iPgoJCTxwb2x5Z29uIHBvaW50cz0iMCw2My43NSAxMjcuNSwxOTEuMjUgMjU1LDYzLjc1ICAgIiBmaWxsPSIjZTgzMzM4Ii8+Cgk8L2c+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==);
 	background-size: contain;
 	z-index: 7;
 }
@@ -803,6 +801,10 @@ form ::-moz-focus-inner {
 	text-transform: uppercase;
 }
 /* Responisve Overrides */
+/* big */
+.main.style2 h2 {
+    padding-bottom: 1em;
+}
 /* medium */
 @media screen and (max-width: 1200px) {	
 				.main.style1 h2 {
@@ -856,10 +858,7 @@ form ::-moz-focus-inner {
 		.fp-controlArrow.fp-prev,
 		.fp-controlArrow.fp-next{
 			display: none;
-		}	
-	#section1 .hover {
-		display: block;
-	}
+		}
 	html, body {
 		overflow-x: hidden;
 	}
@@ -870,12 +869,24 @@ form ::-moz-focus-inner {
 		margin-top: 40px;
 		font-size: 1.2em;
 	}
-	#section1 br{
-		line-height: 350%;
+		#section1 br{
+			line-height: 350%;
+		}
+		#section1 .hover {
+			display: block;
+		}
+	#section2 header{
+		min-height: 20rem
 	}
+		.main.style3 h2 {
+			font-size: 2.5rem;
+		}
 /*xs */	
 @media screen and (max-width: 600px) {
 	/* Basic */	
+	.arrow {
+		display: none;
+	}
 	.introheader h2 {
 		font-size: 1.5em !important;
 	}
@@ -904,10 +915,19 @@ form ::-moz-focus-inner {
 		top: -30px;
 	}
 	.main.style3 h2 {
-		font-size: 1.5em;
-		line-height: 1em;
-		padding-bottom: 5.5em;
+		font-size: 2rem;
+		line-height: 3rem;
+		margin-right: -40%;
+		margin-top: 0;
+		margin-bottom: 0;
+		padding: 2rem;
+	
 	}
+		.main.style3 h3 {
+			font-size: 2rem;
+			line-height: 3rem;
+			margin: 2rem 0 2rem 0;
+		}
 	#line:before, #line:after {
 			left: 20px;
 			top: -40px;
@@ -920,11 +940,15 @@ form ::-moz-focus-inner {
 	#roof{
 		left: 75px;
 		top: -43px;
+		width: 12px;
 	}
 	#section2 .roof {
 		width: 10em;
 		left: -15px;
 		top: -60px;
+	}
+	#footer .content {
+	    padding: 0 0 0 0;
 	}
 	#footer h3 {
 		font-size: 1em;
@@ -935,7 +959,6 @@ form ::-moz-focus-inner {
 	.pic {
 		width: 100% !important;
 	}
-	
 		.pic img {
 			max-width: 100% !important;
 		}

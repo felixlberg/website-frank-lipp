@@ -2,25 +2,18 @@ $(document).ready(function() {
     'use strict';
     // Localisation and Redirect
     $(document).languageDetection({
-        languages   :   [
-			{
-				code : 'de',
-				path : '',
-				defaultLanguage : true
-			},
-			{
-				code : 'en',
-				path : 'en'
-			},
-			{
-				code : 'es',
-				path : 'es'
-			}
+        languages:[
+			{code:'de', path:'', defaultLanguage:true},
+			{code:'en', path:'en'},
+			{code:'es', path:'es'}
 		]		
-	});
+    });
+    // Animate Css on load Animation
+	var $isAnimatedSec0 = $('#section0 .is-animated');
+	var $isAnimatedSec1 = $('#section1 .is-animated');
+	var $isAnimatedSec2 = $('#section2 .is-animated');
 	// Fullpage Scroll
 	$('#fullpage').fullpage({
-        
 		//Navigation
         menu: '#nav',
         lockAnchors: false,
@@ -31,7 +24,6 @@ $(document).ready(function() {
         showActiveTooltip: false,
         slidesNavigation: false,
         slidesNavPosition: 'bottom',
-
         //Scrolling
         css3: false,
         scrollingSpeed: 700,
@@ -52,19 +44,16 @@ $(document).ready(function() {
         offsetSections: false,
         resetSliders: false,
         fadingEffect: false,
-        normalScrollElements: '#element1, .element2',
 		scrollOverflow: false,
         scrollOverflowReset: false,
         scrollOverflowOptions: null,
         touchSensitivity: 15,
         normalScrollElementTouchThreshold: 5,
         bigSectionsDestination: null,
-
         //Accessibility
         keyboardScrolling: true,
         animateAnchor: true,
         recordHistory: true,
-
         //Design
         controlArrows: true,
         verticalCentered: true,
@@ -75,24 +64,26 @@ $(document).ready(function() {
         responsiveWidth: 0,
         responsiveHeight: 0,
         responsiveSlides: false,
-
         //Custom selectors
         sectionSelector: '.section',
         slideSelector: '.slide',
-
         lazyLoading: true,
-
+        //Mobile Scroll Override
+        responsiveWidth: 600,
         //events
-        onLeave: function(index, nextIndex, direction){},
-        afterLoad: function(anchorLink, index){},
+        onLeave: function(index, nextIndex){},
+        afterLoad: function(anchorLink, index){
+            /* Section1 Animations  */
+			if( index == 1 ){
+				$isAnimatedSec0.eq(0).addClass('animated bounceInUp').css('animation-delay', '1s');
+			}
+        },
         afterRender: function(){},
         afterResize: function(){},
-		responsiveHeight: 600,
         afterResponsive: function(isResponsive){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
-
     //Gallery hover
     var windowWidth = $(window).width();
     if(windowWidth > 800){
@@ -113,7 +104,6 @@ $(document).ready(function() {
             }
         });
     }
-
     //Gallery Poptrox
     var gal = $('#gallery');
     gal.poptrox({
