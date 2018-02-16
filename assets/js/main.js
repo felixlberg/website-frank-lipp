@@ -6,7 +6,7 @@ $(document).ready(function() {
 			{code:'de', path:'', defaultLanguage:true},
 			{code:'en', path:'en'},
 			{code:'es', path:'es'}
-		]		
+		]
     });
     // Animate Css on load Animation
 	var $isAnimatedSec0 = $('#section0 .is-animated');
@@ -44,7 +44,7 @@ $(document).ready(function() {
         offsetSections: false,
         resetSliders: false,
         fadingEffect: false,
-		scrollOverflow: false,
+		    scrollOverflow: false,
         scrollOverflowReset: false,
         scrollOverflowOptions: null,
         touchSensitivity: 15,
@@ -72,12 +72,7 @@ $(document).ready(function() {
         responsiveWidth: 600,
         //events
         onLeave: function(index, nextIndex){},
-        afterLoad: function(anchorLink, index){
-            /* Section1 Animations  */
-			if( index == 1 ){
-				$isAnimatedSec0.eq(0).addClass('animated bounceInUp').css('animation-delay', '1s');
-			}
-        },
+        afterLoad: function(anchorLink, index){},
         afterRender: function(){},
         afterResize: function(){},
         afterResponsive: function(isResponsive){},
@@ -94,7 +89,7 @@ $(document).ready(function() {
             else{
                 $("#panel1").slideDown().addClass('active');
             }
-        });		
+        });
         $("#hover2").hover(function () {
             if( $("#panel2").hasClass('active') ){
                 $("#panel2").slideUp().removeClass('active');
