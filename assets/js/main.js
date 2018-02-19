@@ -8,10 +8,6 @@ $(document).ready(function() {
 			{code:'es', path:'es'}
 		]
     });
-    // Animate Css on load Animation
-	var $isAnimatedSec0 = $('#section0 .is-animated');
-	var $isAnimatedSec1 = $('#section1 .is-animated');
-	var $isAnimatedSec2 = $('#section2 .is-animated');
 	// Fullpage Scroll
 	$('#fullpage').fullpage({
 		//Navigation
