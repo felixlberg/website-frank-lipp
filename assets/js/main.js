@@ -1,7 +1,6 @@
 $(document).ready(function() {
     'use strict';
-    // Localisation and Redirect
-    /*
+    // Localisation and Redirect  
     $(document).languageDetection({
         languages:[
 			{code:'de', path:'', defaultLanguage:true},
@@ -9,7 +8,6 @@ $(document).ready(function() {
 			{code:'es', path:'es'}
 		]
     });
-    */
 	// Fullpage Scroll
 	$('#fullpage').fullpage({
 		//Navigation
