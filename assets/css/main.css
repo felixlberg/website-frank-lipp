@@ -661,6 +661,8 @@ body {
 .image {
 	position: relative;
 	display: inline-block;
+  border-radius: 5px;
+  overflow: hidden;
 }
 	.image img {
 		display: block;
